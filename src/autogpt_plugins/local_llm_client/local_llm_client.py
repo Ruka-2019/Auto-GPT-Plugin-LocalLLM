@@ -40,4 +40,4 @@ class LocalLLMClient():
     def llm_client(self, messages: List[Message], model: str, temperature: float, max_tokens: int) -> str:
         payload = self.build_payload(messages, model, temperature, max_tokens)
         response = self.post_request(payload)
-        return response.json()['results'][0]
+        return response.json()['results'][0]['text']
