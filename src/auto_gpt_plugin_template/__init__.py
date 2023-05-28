@@ -12,7 +12,7 @@ class Message(TypedDict):
     content: str
 
 
-class AutoGPTPluginTemplate(metaclass=Singleton):
+class AutoGPTPluginTemplate(AbstractSingleton, metaclass=Singleton):
     """
     This is a template for Auto-GPT plugins.
     """
