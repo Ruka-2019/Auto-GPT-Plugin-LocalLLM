@@ -14,7 +14,7 @@ class AutoGPTLocalLLMPlugin(AutoGPTPluginTemplate):
     """
 
     def __init__(self):
-        super.__init__()
+        super().__init__()
         self.name = "Auto-GPT-LocalLLM-Plugin"
         self._version = "0.1.0"
         self.description = "LocalLLM Plugin, Work in progress.."
