@@ -219,7 +219,10 @@ class AutoGPTLocalLLMPlugin(AutoGPTPluginTemplate):
             str: The resulting response.
         """
 
-        return "Test command"
+        from .local_llm_client.local_llm_client import LocalLLMClient
+        client = LocalLLMClient()
+        message = client.llm_client(messages, model, temperature, max_tokens)
+        return message
 
     def can_handle_text_embedding(
             self, text: str
