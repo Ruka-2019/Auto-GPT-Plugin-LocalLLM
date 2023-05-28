@@ -132,4 +132,4 @@ dmypy.json
 .idea
 
 # remove the template folder from git
-/src/auto_gpt_plugin_template/
+src/auto_gpt_plugin_template/
